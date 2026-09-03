@@ -8,7 +8,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
     <!-- Navbar with Official Logo -->
-    <header class="bg-teal-700 text-white shadow-md">
+    <header class="bg-teal-700 text-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
                 <img src="logo.jpg" alt="RYAA Logo" class="h-10 w-10 rounded-full object-cover bg-white p-0.5 shadow">
@@ -16,9 +16,8 @@
             </div>
             <nav class="space-x-4 text-sm hidden md:block">
                 <a href="#" class="hover:underline">Home</a>
-                <a href="#" class="hover:underline">About</a>
-                <a href="#" class="hover:underline">Departments</a>
-                <a href="#" class="hover:underline">Contact</a>
+                <a href="#departments" class="hover:underline">Departments</a>
+                <a href="#contact" class="hover:underline">Contact</a>
             </nav>
         </div>
     </header>
@@ -32,18 +31,65 @@
         </div>
     </section>
 
-    <!-- Departments Grid -->
+    <!-- Departments Section with Details -->
     <section id="departments" class="max-w-7xl mx-auto px-4 py-12">
-        <h3 class="text-2xl font-bold text-center mb-8 text-teal-900">Our Departments</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Refugee Affairs</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Foreign Affairs</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Education</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Youth Empowerment</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Media</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Culture</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Environment</div>
-            <div class="bg-white p-4 rounded-lg shadow text-center border border-teal-100">Community Engagement</div>
+        <h3 class="text-2xl font-bold text-center mb-2 text-teal-900">Our Departments & Activities</h3>
+        <p class="text-center text-slate-600 mb-8 text-sm">Working across multiple fronts for community development and advocacy.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Dept 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Refugee Affairs</h4>
+                <p class="text-sm text-slate-600">Focuses on protection rights, legal aid awareness, and advocacy for refugee welfare.</p>
+            </div>
+            <!-- Dept 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Foreign Affairs</h4>
+                <p class="text-sm text-slate-600">Builds international partnerships and diplomatic engagement with global human rights bodies.</p>
+            </div>
+            <!-- Dept 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Education</h4>
+                <p class="text-sm text-slate-600">Promotes access to quality learning, skill development workshops, and youth scholarships.</p>
+            </div>
+            <!-- Dept 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Youth Empowerment</h4>
+                <p class="text-sm text-slate-600">Empowers young leaders through training, mentorship, and civic participation programs.</p>
+            </div>
+            <!-- Dept 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Media</h4>
+                <p class="text-sm text-slate-600">Manages public relations, digital storytelling, press releases, and social media campaigns.</p>
+            </div>
+            <!-- Dept 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Culture</h4>
+                <p class="text-sm text-slate-600">Preserves and promotes Rohingya heritage, arts, literature, and traditional history.</p>
+            </div>
+            <!-- Dept 7 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Environment</h4>
+                <p class="text-sm text-slate-600">Leads climate awareness, tree plantation drives, and sustainable camp management initiatives.</p>
+            </div>
+            <!-- Dept 8 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
+                <h4 class="font-bold text-teal-800 text-lg mb-2">Community Engagement</h4>
+                <p class="text-sm text-slate-600">Fosters social cohesion, grassroots dialogues, and community support networks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-100 py-12 px-4 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-3 text-teal-900">Get in Touch with RYAA</h3>
+            <p class="text-slate-600 mb-6 text-sm">Have questions or want to collaborate with our advocacy initiatives? Reach out to us.</p>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 inline-block text-left w-full max-w-md">
+                <p class="mb-3 text-sm"><strong>Email:</strong> info@ryaa-digital.org</p>
+                <p class="mb-3 text-sm"><strong>Location:</strong> Cox's Bazar, Bangladesh</p>
+                <p class="text-sm"><strong>Platform:</strong> Official Digital Hub</p>
+            </div>
         </div>
     </section>
 
