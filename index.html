@@ -3,99 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RYAA - Rohingya Youth Advocacy Alliance</title>
+    <title>RYAA Digital Hub - Admin Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-800">
-    <!-- Navbar with Official Logo -->
-    <header class="bg-teal-700 text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="logo.jpg" alt="RYAA Logo" class="h-10 w-10 rounded-full object-cover bg-white p-0.5 shadow">
-                <span class="text-lg font-bold">RYAA Digital Hub</span>
-            </div>
-            <nav class="space-x-4 text-sm hidden md:block">
-                <a href="#" class="hover:underline">Home</a>
-                <a href="#departments" class="hover:underline">Departments</a>
-                <a href="#contact" class="hover:underline">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="py-16 px-4 text-center bg-teal-800 text-white">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Rohingya Youth Advocacy Alliance (RYAA)</h2>
-            <p class="text-lg text-teal-100 mb-6">Amplifying Rohingya voices and fostering a resilient, peaceful, and just future for all.</p>
-            <a href="#departments" class="bg-white text-teal-800 font-semibold px-6 py-3 rounded-lg shadow hover:bg-teal-50">Explore Departments</a>
-        </div>
-    </section>
-
-    <!-- Departments Section with Details -->
-    <section id="departments" class="max-w-7xl mx-auto px-4 py-12">
-        <h3 class="text-2xl font-bold text-center mb-2 text-teal-900">Our Departments & Activities</h3>
-        <p class="text-center text-slate-600 mb-8 text-sm">Working across multiple fronts for community development and advocacy.</p>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Content Management System</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Dept 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Refugee Affairs</h4>
-                <p class="text-sm text-slate-600">Focuses on protection rights, legal aid awareness, and advocacy for refugee welfare.</p>
+        <div class="space-y-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Select Category:</label>
+                <select id="categorySelect" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="">-- Select Existing Category --</option>
+                    <option value="tech">Tech & Gadgets</option>
+                    <option value="digital">Digital Hub</option>
+                    <option value="general">General Updates</option>
+                </select>
             </div>
-            <!-- Dept 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Foreign Affairs</h4>
-                <p class="text-sm text-slate-600">Builds international partnerships and diplomatic engagement with global human rights bodies.</p>
+
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Item Title / Heading:</label>
+                <input type="text" id="catTitle" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter title or item name">
             </div>
-            <!-- Dept 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Education</h4>
-                <p class="text-sm text-slate-600">Promotes access to quality learning, skill development workshops, and youth scholarships.</p>
+            
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Content / Description:</label>
+                <textarea id="catDesc" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter detailed content here..."></textarea>
             </div>
-            <!-- Dept 4 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Youth Empowerment</h4>
-                <p class="text-sm text-slate-600">Empowers young leaders through training, mentorship, and civic participation programs.</p>
-            </div>
-            <!-- Dept 5 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Media</h4>
-                <p class="text-sm text-slate-600">Manages public relations, digital storytelling, press releases, and social media campaigns.</p>
-            </div>
-            <!-- Dept 6 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Culture</h4>
-                <p class="text-sm text-slate-600">Preserves and promotes Rohingya heritage, arts, literature, and traditional history.</p>
-            </div>
-            <!-- Dept 7 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Environment</h4>
-                <p class="text-sm text-slate-600">Leads climate awareness, tree plantation drives, and sustainable camp management initiatives.</p>
-            </div>
-            <!-- Dept 8 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-teal-100 hover:shadow-md transition">
-                <h4 class="font-bold text-teal-800 text-lg mb-2">Community Engagement</h4>
-                <p class="text-sm text-slate-600">Fosters social cohesion, grassroots dialogues, and community support networks.</p>
+
+            <div class="flex gap-2">
+                <button onclick="saveData()" class="flex-1 bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">
+                    Save Changes
+                </button>
+                <button onclick="deleteData()" class="px-4 bg-red-600 text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition duration-200">
+                    Delete
+                </button>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-slate-100 py-12 px-4 border-t border-slate-200">
-        <div class="max-w-3xl mx-auto text-center">
-            <h3 class="text-2xl font-bold mb-3 text-teal-900">Get in Touch with RYAA</h3>
-            <p class="text-slate-600 mb-6 text-sm">Have questions or want to collaborate with our advocacy initiatives? Reach out to us.</p>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 inline-block text-left w-full max-w-md">
-                <p class="mb-3 text-sm"><strong>Email:</strong> info@ryaa-digital.org</p>
-                <p class="mb-3 text-sm"><strong>Location:</strong> Cox's Bazar, Bangladesh</p>
-                <p class="text-sm"><strong>Platform:</strong> Official Digital Hub</p>
-            </div>
-        </div>
-    </section>
+        <div id="statusMessage" class="mt-4 text-center text-sm font-medium"></div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-800 text-slate-300 py-6 text-center text-sm">
-        <p>&copy; 2026 Rohingya Youth Advocacy Alliance (RYAA). All rights reserved.</p>
-    </footer>
+    <script>
+        function saveData() {
+            const category = document.getElementById('categorySelect').value;
+            const title = document.getElementById('catTitle').value;
+            const desc = document.getElementById('catDesc').value;
+            const status = document.getElementById('statusMessage');
+
+            if(!category || (!title && !desc)) {
+                status.style.color = 'red';
+                status.innerText = 'Please select a category and fill in the details!';
+                return;
+            }
+
+            status.style.color = 'green';
+            status.innerText = 'Changes saved successfully!';
+        }
+
+        function deleteData() {
+            const category = document.getElementById('categorySelect').value;
+            const status = document.getElementById('statusMessage');
+
+            if(!category) {
+                status.style.color = 'red';
+                status.innerText = 'Please select a category to delete!';
+                return;
+            }
+
+            status.style.color = 'red';
+            status.innerText = 'Selected category/item deleted successfully!';
+        }
+    </script>
 </body>
 </html>
