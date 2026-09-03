@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ismailwttw/ryaa-digital-hub
   branch: main
-  base_url: https://auth.decapcms.org
+  base_url: https://decap-git-gateway.netlify.app
 
 media_folder: ""
 public_folder: ""
