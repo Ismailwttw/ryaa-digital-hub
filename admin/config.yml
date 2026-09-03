@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ismailwttw/ryaa-digital-hub
+  branch: main
+
+media_folder: ""
+public_folder: ""
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "contact"
+        label: "Contact & Info"
+        file: "index.html"
+        fields:
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Location", name: "location", widget: "string"}
+          
