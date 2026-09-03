@@ -2,6 +2,7 @@ backend:
   name: github
   repo: ismailwttw/ryaa-digital-hub
   branch: main
+  base_url: https://auth.decapcms.org
 
 media_folder: ""
 public_folder: ""
@@ -16,4 +17,3 @@ collections:
         fields:
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Location", name: "location", widget: "string"}
-          
